@@ -1,0 +1,27 @@
+<template>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer__wrapper col-12">
+                    <p class="footer__text">Богус Вадим Евгеньевич</p>
+                    <button class="footer__button" @click="goTop">
+                        <svg height="30" width="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M7.50716 11.6536C7.19494 11.3814 7.16249 10.9076 7.43468 10.5954L11.4347 6.00715C11.5771 5.84377 11.7833 5.75 12 5.75C12.2168 5.75 12.4229 5.84377 12.5653 6.00715L16.5653 10.5954C16.8375 10.9076 16.8051 11.3814 16.4929 11.6536C16.1806 11.9258 15.7069 11.8933 15.4347 11.5811L12.75 8.50161L12.75 17.5C12.75 17.9142 12.4142 18.25 12 18.25C11.5858 18.25 11.25 17.9142 11.25 17.5L11.25 8.50161L8.56534 11.5811C8.29315 11.8933 7.81938 11.9258 7.50716 11.6536Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</template>
+
+<script>
+export default {
+    name: 'TheFooter',
+    methods: {
+        goTop() {
+            window.scrollTo(0, 0);
+        }
+    }
+}
+</script>

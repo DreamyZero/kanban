@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--main-background);
+
+    --button-color: white;
+    --button-background: #2699fb;
+    --button-color-hover: #2699fb;
+    --header-color: #2699fb;
+    --main-background: white;
+    --board-background: #f1f9ff;
+    --footer-background: #f1f9ff;;
+    --task-background: white;
+    --task-color: #2699fb;
+    --task-border: #2699fb;
+    --task-button-background: #f1f9ff;
+    --task-button-border: #2699fb;
+    --task-buton-color: #2699fb;
+    --task-button-hover: #2699fb;
+    --task-priority-color: #2699fb;
+    --board-color: #000;
+    --modal-button: #f1f9ff;
+    --modal-border: #2699fb;
+    --footer-color: #2699fb;
+
+    &.night {
+        --button-background: #5d35d9;
+        --button-color-hover: #fff;
+        --header-color: #3c4043;
+        --main-background: #1a1d21;
+        --board-background: #212529;
+        --task-background: #405189;
+        --task-color: white;
+        --task-border: transparent;
+        --task-button-background: #292e33;
+        --task-button-border: white;
+        --task-buton-color: #2699fb;
+        --task-button-hover: transparent;
+        --footer-background: #3c4043;
+        --task-priority-color: #405189;;
+        --board-color: #fff;
+        --modal-button: #5d35d9;
+        --modal-border: transparent;
+        --footer-color: #fff;
+    }
+}
+
+#app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    padding: 50px 0;
+}
+
+.footer {
+    flex-shrink: 1;
+}
+
+button {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}

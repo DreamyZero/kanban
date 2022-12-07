@@ -1,0 +1,38 @@
+.board-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    @media screen {
+        justify-content: center;
+        gap: 40px;
+    }
+}
+
+.board {
+    padding: 20px;
+    width: calc(33% - 50px);
+    background-color: var(--board-background);
+    
+    &__header {
+        margin-bottom: 20px;
+        text-align: center;
+        color: var(--board-color);
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+    }
+}
